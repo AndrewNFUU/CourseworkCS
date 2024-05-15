@@ -1,0 +1,95 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CourseWorkCS
+{
+    public class GradeBook
+    {
+        private Student _stud;
+
+        public GradeBook() { }
+
+        public GradeBook(Student newStudent)
+        {
+            _stud = newStudent;   
+        }
+
+        public Student Stud
+        {
+            get => _stud;
+            set => _stud = value; 
+        }
+
+        public void SetStudent(Student newStudent)
+        {
+            _stud = newStudent;
+        }
+
+        public void AddExam(Exam exam)
+        {
+            _stud.AddExam(exam);
+        }
+
+        public List<Exam> ExamList()
+        {
+            List<Exam> exams = _stud.Exams;
+
+            return exams;
+        }
+
+        public double GetAvgGrade()
+        {
+            List<Exam> exams = _stud.Exams;
+
+            if (exams.Count == 0)
+            {
+                return 0.0;
+            }
+            else
+            {
+                double totalGrade = 0.0;
+
+                foreach (var exam in exams)
+                {
+                    totalGrade += exam.Grade;
+                }
+
+                return totalGrade / exams.Count;
+            }
+        }
+
+        public double GetMaxGrade()
+        {
+            List<Exam> exams = _stud.Exams;
+
+            if (exams.Count == 0)
+            {
+                return 0.0;
+            }
+            else
+            {
+                double maxGrade = exams.Max(exam => exam.Grade);
+                return maxGrade;
+            }
+        }
+
+        public double GetMinGrade()
+        {
+            List<Exam> exams = _stud.Exams;
+
+            if (exams.Count == 0)
+            {
+                return 0.0;
+            }
+            else
+            {
+                double minGrade = exams.Min(exam => exam.Grade);
+                return minGrade;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+C:\Users\Користувач\source\repos\CourseWorkCS\CourseWorkCS\bin\Debug\CourseWorkCS.exe.config
+C:\Users\Користувач\source\repos\CourseWorkCS\CourseWorkCS\bin\Debug\CourseWorkCS.exe
+C:\Users\Користувач\source\repos\CourseWorkCS\CourseWorkCS\bin\Debug\CourseWorkCS.pdb
+C:\Users\Користувач\source\repos\CourseWorkCS\CourseWorkCS\obj\Debug\CourseWorkCS.csproj.AssemblyReference.cache
+C:\Users\Користувач\source\repos\CourseWorkCS\CourseWorkCS\obj\Debug\CourseWorkCS.Properties.Resources.resources
+C:\Users\Користувач\source\repos\CourseWorkCS\CourseWorkCS\obj\Debug\CourseWorkCS.csproj.GenerateResource.cache
+C:\Users\Користувач\source\repos\CourseWorkCS\CourseWorkCS\obj\Debug\CourseWorkCS.csproj.CoreCompileInputs.cache
+C:\Users\Користувач\source\repos\CourseWorkCS\CourseWorkCS\obj\Debug\CourseWorkCS.exe
+C:\Users\Користувач\source\repos\CourseWorkCS\CourseWorkCS\obj\Debug\CourseWorkCS.pdb
+C:\Users\Користувач\source\repos\CourseWorkCS\CourseWorkCS\obj\Debug\CourseWorkCS.frmHome.resources
+C:\Users\Користувач\source\repos\CourseWorkCS\CourseWorkCS\obj\Debug\CourseWorkCS.frmTeachers.resources
+C:\Users\Користувач\source\repos\CourseWorkCS\CourseWorkCS\obj\Debug\CourseWorkCS.frmAddTeacher.resources
+C:\Users\Користувач\source\repos\CourseWorkCS\CourseWorkCS\obj\Debug\CourseWorkCS.frmStudents.resources
+C:\Users\Користувач\source\repos\CourseWorkCS\CourseWorkCS\obj\Debug\CourseWorkCS.frmAddStudent.resources
+C:\Users\Користувач\source\repos\CourseWorkCS\CourseWorkCS\obj\Debug\CourseWorkCS.frmSelectedStudent.resources
+C:\Users\Користувач\source\repos\CourseWorkCS\CourseWorkCS\obj\Debug\CourseWorkCS.frmAbout.resources
+C:\Users\Користувач\source\repos\CourseWorkCS\CourseWorkCS\obj\Debug\CourseWorkCS.frmOther.resources
