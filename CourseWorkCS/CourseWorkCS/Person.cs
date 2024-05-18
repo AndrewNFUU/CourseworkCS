@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace CourseWorkCS
 {
@@ -82,6 +76,7 @@ namespace CourseWorkCS
 
         private bool ContainsDigits(string input)
         {
+            //input.Any(char.IsDigit)
             foreach (char c in input)
             {
                 if (char.IsDigit(c))

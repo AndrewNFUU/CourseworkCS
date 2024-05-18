@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CourseWorkCS
 {
@@ -19,7 +16,7 @@ namespace CourseWorkCS
     [Serializable]
     public class Student : Person, IComparable
     {
-        private UniversityGroup _group = UniversityGroup.Underfiend;
+        private UniversityGroup _group;
         private List<Exam> _exams = new List<Exam>();
 
         #region constructors
@@ -38,9 +35,8 @@ namespace CourseWorkCS
                         string lastName,
                         UniversityGroup newGroup,
                         List<Exam> newExams) :
-                        base(firstName, lastName)
+                        this(firstName, lastName, newGroup)
         {
-            Group = newGroup;
             Exams = newExams;
         }
 
@@ -92,6 +88,12 @@ namespace CourseWorkCS
 
         public string GroupToString()
         {
+            //return _group switch
+            //{
+            //    UniversityGroup.Underfiend => "Underfiend",
+            //    _ => "Unknown"
+            //};
+
             switch (_group)
             {
                 case UniversityGroup.Underfiend:

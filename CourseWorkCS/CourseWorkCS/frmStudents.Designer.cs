@@ -161,7 +161,7 @@
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(97, 34);
             this.btnFind.TabIndex = 30;
-            this.btnFind.Text = "Select";
+            this.btnFind.Text = "Find";
             this.btnFind.UseVisualStyleBackColor = false;
             this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
@@ -184,7 +184,6 @@
             this.labelFind.Size = new System.Drawing.Size(168, 23);
             this.labelFind.TabIndex = 28;
             this.labelFind.Text = "Enter last name:";
-            this.labelFind.Click += new System.EventHandler(this.labelFind_Click);
             // 
             // frmStudents
             // 

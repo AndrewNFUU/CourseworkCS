@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CourseWorkCS
@@ -223,23 +218,23 @@ namespace CourseWorkCS
             #endregion
 
             #region students
-            students.Add(new Student("John", "Doe", UniversityGroup.Computer_Science, exams1));
+            students.Add(new Student("Ivan", "Ushnyj", UniversityGroup.Computer_Science, exams1));
             students.Add(new Student("Andrii", "Kononenko", UniversityGroup.Computer_Science, exams6));
-            students.Add(new Student("Jane", "Smith", UniversityGroup.Software_Engineering, exams2));
-            students.Add(new Student("Mike", "Johnson", UniversityGroup.Information_Technology, exams3));
-            students.Add(new Student("Emily", "Williams", UniversityGroup.Cybersecurity, exams4));
-            students.Add(new Student("David", "Brown", UniversityGroup.Data_Science));
-            students.Add(new Student("Sarah", "Miller", UniversityGroup.Computer_Science));
-            students.Add(new Student("Chris", "Wilson", UniversityGroup.Software_Engineering, exams1));
-            students.Add(new Student("Jessica", "Davis", UniversityGroup.Information_Technology));
-            students.Add(new Student("Michael", "Taylor", UniversityGroup.Cybersecurity));
-            students.Add(new Student("Laura", "Moore", UniversityGroup.Data_Science, exams5));
-            students.Add(new Student("Alex", "Anderson", UniversityGroup.Computer_Science));
-            students.Add(new Student("Rachel", "Clark", UniversityGroup.Software_Engineering, exams3));
-            students.Add(new Student("Kevin", "Lee", UniversityGroup.Information_Technology));
-            students.Add(new Student("Olivia", "White", UniversityGroup.Cybersecurity));
-            students.Add(new Student("Daniel", "Martin", UniversityGroup.Data_Science, exams2));
-            students.Add(new Student("Bill", "Martin", UniversityGroup.Software_Engineering, exams4));
+            students.Add(new Student("Janna", "Teliga", UniversityGroup.Software_Engineering, exams2));
+            students.Add(new Student("Bogdan", "Rayevskyy", UniversityGroup.Information_Technology, exams3));
+            students.Add(new Student("Eva", "Jatsyk", UniversityGroup.Cybersecurity, exams4));
+            students.Add(new Student("Davyd", "Ismailskyy", UniversityGroup.Data_Science));
+            students.Add(new Student("Mariya", "Chaplya", UniversityGroup.Computer_Science));
+            students.Add(new Student("Chrystina", "Kurotchyn", UniversityGroup.Software_Engineering, exams1));
+            students.Add(new Student("Ivanna", "Andriiv", UniversityGroup.Information_Technology));
+            students.Add(new Student("Michaylo", "Girnyy", UniversityGroup.Cybersecurity));
+            students.Add(new Student("Larysa", "Borys", UniversityGroup.Data_Science, exams5));
+            students.Add(new Student("Semen", "Petrovych", UniversityGroup.Computer_Science));
+            students.Add(new Student("Roman", "Dub", UniversityGroup.Software_Engineering, exams3));
+            students.Add(new Student("Anthon", "Lypa", UniversityGroup.Information_Technology));
+            students.Add(new Student("Olha", "Bila", UniversityGroup.Cybersecurity));
+            students.Add(new Student("Danylo", "Martin", UniversityGroup.Data_Science, exams2));
+            students.Add(new Student("Maxym", "Moroz", UniversityGroup.Software_Engineering, exams4));
             #endregion
 
             RefreshData();
@@ -275,7 +270,8 @@ namespace CourseWorkCS
                 {
                     dataGridStudents.Rows.Add(student.FirstName,
                                                student.LastName,
-                                               student.GroupToString());
+                                               student.GroupToString(),
+                                               student.Exams.Count);
                 }
             }
             else
@@ -310,11 +306,6 @@ namespace CourseWorkCS
 
             new frmSelectedStudent(selectedStudents[e.RowIndex]).ShowDialog();
             // MessageBox.Show($"{selectedStudents[e.RowIndex].LastName} {selectedStudents[e.RowIndex].FirstName}");
-        }
-
-        private void labelFind_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

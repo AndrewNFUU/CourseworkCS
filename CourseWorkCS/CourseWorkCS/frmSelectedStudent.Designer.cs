@@ -29,12 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSelectedStudent));
-            this.btnClose = new System.Windows.Forms.Button();
             this.dataGridExams = new System.Windows.Forms.DataGridView();
-            this.listBoxStats = new System.Windows.Forms.ListBox();
-            this.btnFind = new System.Windows.Forms.Button();
-            this.txtSubject = new System.Windows.Forms.TextBox();
-            this.labelFind = new System.Windows.Forms.Label();
             this.subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studyHours = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.examDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,20 +37,12 @@
             this.lastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.position = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.listBoxStats = new System.Windows.Forms.ListBox();
+            this.btnFind = new System.Windows.Forms.Button();
+            this.txtSubject = new System.Windows.Forms.TextBox();
+            this.labelFind = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridExams)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnClose
-            // 
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnClose.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnClose.Location = new System.Drawing.Point(683, 31);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(45, 34);
-            this.btnClose.TabIndex = 12;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // dataGridExams
             // 
@@ -79,46 +66,6 @@
             this.dataGridExams.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGridExams.Size = new System.Drawing.Size(716, 204);
             this.dataGridExams.TabIndex = 13;
-            // 
-            // listBoxStats
-            // 
-            this.listBoxStats.FormattingEnabled = true;
-            this.listBoxStats.ItemHeight = 16;
-            this.listBoxStats.Location = new System.Drawing.Point(12, 291);
-            this.listBoxStats.Name = "listBoxStats";
-            this.listBoxStats.Size = new System.Drawing.Size(716, 132);
-            this.listBoxStats.TabIndex = 14;
-            // 
-            // btnFind
-            // 
-            this.btnFind.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnFind.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnFind.Location = new System.Drawing.Point(540, 32);
-            this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(97, 34);
-            this.btnFind.TabIndex = 33;
-            this.btnFind.Text = "Find";
-            this.btnFind.UseVisualStyleBackColor = false;
-            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
-            // 
-            // txtSubject
-            // 
-            this.txtSubject.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubject.Location = new System.Drawing.Point(340, 36);
-            this.txtSubject.Name = "txtSubject";
-            this.txtSubject.Size = new System.Drawing.Size(173, 28);
-            this.txtSubject.TabIndex = 32;
-            this.txtSubject.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSubject_KeyDown);
-            // 
-            // labelFind
-            // 
-            this.labelFind.AutoSize = true;
-            this.labelFind.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFind.Location = new System.Drawing.Point(172, 38);
-            this.labelFind.Name = "labelFind";
-            this.labelFind.Size = new System.Drawing.Size(150, 23);
-            this.labelFind.TabIndex = 31;
-            this.labelFind.Text = "Enter subgect:";
             // 
             // subject
             // 
@@ -169,6 +116,46 @@
             this.grade.Name = "grade";
             this.grade.Width = 63;
             // 
+            // listBoxStats
+            // 
+            this.listBoxStats.FormattingEnabled = true;
+            this.listBoxStats.ItemHeight = 16;
+            this.listBoxStats.Location = new System.Drawing.Point(12, 291);
+            this.listBoxStats.Name = "listBoxStats";
+            this.listBoxStats.Size = new System.Drawing.Size(716, 132);
+            this.listBoxStats.TabIndex = 14;
+            // 
+            // btnFind
+            // 
+            this.btnFind.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnFind.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnFind.Location = new System.Drawing.Point(486, 32);
+            this.btnFind.Name = "btnFind";
+            this.btnFind.Size = new System.Drawing.Size(97, 34);
+            this.btnFind.TabIndex = 33;
+            this.btnFind.Text = "Find";
+            this.btnFind.UseVisualStyleBackColor = false;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
+            // 
+            // txtSubject
+            // 
+            this.txtSubject.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSubject.Location = new System.Drawing.Point(286, 36);
+            this.txtSubject.Name = "txtSubject";
+            this.txtSubject.Size = new System.Drawing.Size(173, 28);
+            this.txtSubject.TabIndex = 32;
+            this.txtSubject.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSubject_KeyDown);
+            // 
+            // labelFind
+            // 
+            this.labelFind.AutoSize = true;
+            this.labelFind.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFind.Location = new System.Drawing.Point(118, 38);
+            this.labelFind.Name = "labelFind";
+            this.labelFind.Size = new System.Drawing.Size(150, 23);
+            this.labelFind.TabIndex = 31;
+            this.labelFind.Text = "Enter subgect:";
+            // 
             // frmSelectedStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -179,7 +166,6 @@
             this.Controls.Add(this.labelFind);
             this.Controls.Add(this.listBoxStats);
             this.Controls.Add(this.dataGridExams);
-            this.Controls.Add(this.btnClose);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSelectedStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -191,8 +177,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.DataGridView dataGridExams;
         private System.Windows.Forms.ListBox listBoxStats;
         private System.Windows.Forms.Button btnFind;

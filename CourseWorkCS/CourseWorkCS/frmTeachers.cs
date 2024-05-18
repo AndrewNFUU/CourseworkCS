@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CourseWorkCS
@@ -165,11 +160,11 @@ namespace CourseWorkCS
 
         private void HardcodedTeachers()
         {
-            teachers.Add(new Teacher("Angelo", "Demar", TeacherPosition.Assistant));
-            teachers.Add(new Teacher("Jane", "Smith", TeacherPosition.Senior_Lecturer));
-            teachers.Add(new Teacher("David", "Johnson", TeacherPosition.Docent));
-            teachers.Add(new Teacher("Emily", "Williams", TeacherPosition.Professor));
-            teachers.Add(new Teacher("Michael", "Rose", TeacherPosition.Assistant));
+            teachers.Add(new Teacher("Svitlana", "Melnyk", TeacherPosition.Assistant));
+            teachers.Add(new Teacher("Ivan", "Shelepeten", TeacherPosition.Senior_Lecturer));
+            teachers.Add(new Teacher("Ostap", "Dymanskyy", TeacherPosition.Docent));
+            teachers.Add(new Teacher("Emma", "Watson", TeacherPosition.Professor));
+            teachers.Add(new Teacher("Danylo", "Markevych", TeacherPosition.Assistant));
 
             RefreshData();
         }

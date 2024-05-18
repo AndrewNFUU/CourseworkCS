@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace CourseWorkCS
 {
@@ -57,8 +54,9 @@ namespace CourseWorkCS
                 {
                     totalGrade += exam.Grade;
                 }
-
-                return totalGrade / exams.Count;
+                double avgGrade = totalGrade / exams.Count;
+                
+                return Math.Round(avgGrade, 2);
             }
         }
 
